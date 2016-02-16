@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chicken Road</title>
+  </head>
+  <body>
+    <canvas id="canvas" width="700" height="500"></canvas>
+
+    <script type="application/javascript" src="vendor/keymaster.js"></script>
+
+    <script type="application/javascript" src="lib/utils.js"></script>
+    <script type="application/javascript" src="lib/truck.js"></script>
+    <script type="application/javascript" src="lib/car.js"></script>
+    <script type="application/javascript" src="lib/chicken.js"></script>
+    <script type="application/javascript" src="lib/egg.js"></script>
+    <script type="application/javascript" src="lib/nest.js"></script>
+    <script type="application/javascript" src="lib/game.js"></script>
+
+    <script type="text/javascript">
+      (function () {
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+        new ChickenRoad.Game(ctx, canvas.width, canvas.height).start();
+      })();
+    </script>
+
+  </body>
+</html>
