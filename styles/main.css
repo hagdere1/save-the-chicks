@@ -2,6 +2,13 @@ canvas {
   display: block;
   background: url('../images/background.jpg');
   margin: auto;
+  margin-top: 60px;
+  border-radius: 7px;
+  border: 2px solid white;
+}
+
+body {
+  background: url('../images/nest.jpg')
 }
 
 /*h3 {
