@@ -6,8 +6,25 @@
     <link rel="stylesheet" type="text/css" href="styles/main.css">
   </head>
   <body>
-    <center><canvas id="canvas" width="1000" height="600"></canvas></center>
 
+  <div id="SplashScreen">
+    <h1 class="game-title">Emerge-Hen-cy!</h1>
+    <img class="chicken_running" src="https://upload.wikimedia.org/wikipedia/commons/4/41/Yellow_road_marking.jpg">
+    <div class="instructions">
+      <p>A strong gale has blown your eggs across the highway.</p>
+      <p>You're a chicken. Those are your children.</p>
+      <p>Save your children.</p>
+
+      <p>Move around with the WASD keys to get to your eggs before the timer runs out.</p>
+      <p>Click START to begin.</p>
+      <input id="StartButton" type="button" value="START"/>
+    </div>
+  </div>
+
+    <canvas id="canvas" width="1000" height="600"></canvas>
+    <!-- <audio id="soundEfx" src="pop.wav" style="display: none;"></audio> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script type="application/javascript" src="vendor/keymaster.js"></script>
 
     <script type="application/javascript" src="lib/utils.js"></script>
@@ -22,7 +39,12 @@
       (function () {
         var canvas = document.getElementById("canvas");
         var ctx = canvas.getContext("2d");
-        new ChickenRoad.Game(ctx, canvas.width, canvas.height).start();
+        $("#canvas").hide();
+        $("#StartButton").click(function () {
+            $("#SplashScreen").hide();
+            $("#canvas").show();
+            new ChickenRoad.Game(ctx, canvas.width, canvas.height).start();
+        });
       })();
     </script>
 
