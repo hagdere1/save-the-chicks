@@ -44,9 +44,9 @@ body {
   font-family: georgia;
   color: black;
   -webkit-text-fill-color: red; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 4px;
   -webkit-text-stroke-color: black;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   font-weight: bold;
   -ms-transform: rotate(-15deg);
   -webkit-transform: rotate(-15deg);
@@ -60,12 +60,13 @@ body {
 
 
 div input {
-  font-size: 30px;
+  font-size: 40px;
+  padding: 10px;
   color: white;
   background: black;
   position: absolute;
-  top: 600px;
-  left: 700px;
+  top: 570px;
+  left: 800px;
 }
 
 div input:hover {
@@ -73,6 +74,36 @@ div input:hover {
   color: #FFD700;
 }
 
+.intro {
+  font-family: georgia;
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  top: 120px;
+  left: 170px;
+}
+
+.intro p {
+  padding-top: 10px;
+}
+
+.instructions {
+  font-family: georgia;
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  top: 480px;
+  left: 740px;
+}
+
+.instructions p {
+  padding-top: 10px;
+}
+
+.instructions-start {
+  color: white;
+  padding-top: 20px;
+}
 /*h3 {
   display: block;
   color: green;
