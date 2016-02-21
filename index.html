@@ -21,6 +21,7 @@
   </div>
 
     <canvas id="canvas" width="1000" height="600"></canvas>
+
     <!-- <audio id="soundEfx" src="pop.wav" style="display: none;"></audio> -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -43,7 +44,7 @@
         $("#StartButton").click(function () {
             $("#SplashScreen").hide();
             $("#canvas").show();
-            new ChickenRoad.Game(ctx, canvas.width, canvas.height).start();
+            var game = new ChickenRoad.Game(ctx, canvas.width, canvas.height).start();
         });
       })();
     </script>
