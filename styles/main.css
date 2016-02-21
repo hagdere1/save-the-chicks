@@ -19,10 +19,12 @@ canvas {
 }
 
 body {
-  background: url('../images/nest.jpg')
+  background: url('../images/nest.jpg');
+  min-height: 666px;
 }
 
 #SplashScreen {
+  position: relative;
   display: block;
   background-color: white;
   height: 600px;
@@ -39,125 +41,76 @@ body {
   height: 100%;
 }
 
+#keys {
+  position: absolute;
+  top: 396px;
+  left: 700px;
+}
+
+#egg {
+  position: absolute;
+  top: 30px;
+  left: 45px;
+}
+
+#SplashScreen p {
+  font-family: 'Oswald', georgia, sans-serif;
+  font-size: 30px;
+  color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+}
+
+.directions-text {
+  top: 95px;
+  left: 95px;
+  z-index: 1;
+}
+
+.move-text {
+  top: 530px;
+  left: 769px;
+}
+
+
 .game-title {
   text-transform: uppercase;
-  font-family: georgia;
+  font-family: 'Oswald', georgia, sans-serif;
   color: black;
   -webkit-text-fill-color: red; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-width: 5px;
   -webkit-text-stroke-color: black;
-  letter-spacing: 3px;
+  letter-spacing: 6px;
   font-weight: bold;
   -ms-transform: rotate(-15deg);
   -webkit-transform: rotate(-15deg);
   transform: rotate(-15deg);
   position: absolute;
-  top: 280px;
-  left: 175px;
-  font-size: 90px;
+  top: 185px;
+  left: 65px;
+  font-size: 120px;
   color: "white";
 }
 
 
 div input {
+  font-family: georgia;
   font-size: 40px;
-  padding: 10px;
+  font-weight: bold;
+  padding: 10px 15px 10px 15px;
   color: white;
   background: black;
   position: absolute;
-  top: 570px;
-  left: 800px;
+  top: 500px;
+  left: 430px;
+  border-radius: 7px;
 }
 
 div input:hover {
   cursor: pointer;
   color: #FFD700;
+  text-shadow: 1px 1px #FF0000;
 }
-
-.intro {
-  font-family: georgia;
-  position: absolute;
-  color: white;
-  font-weight: bold;
-  top: 120px;
-  left: 170px;
-}
-
-.intro p {
-  padding-top: 10px;
-}
-
-.instructions {
-  font-family: georgia;
-  position: absolute;
-  color: white;
-  font-weight: bold;
-  top: 480px;
-  left: 740px;
-}
-
-.instructions p {
-  padding-top: 10px;
-}
-
-.instructions-start {
-  color: white;
-  padding-top: 20px;
-}
-/*h3 {
-  display: block;
-  color: green;
-  font-size: 90px;
-  font-weight: bold;
-  font-family: fantasy;
-  text-shadow: 10px 10px 0 #ffd217, 20px 20px 0 #5ac7ff, 30px 30px 0 #ffd217, 40px 40px 0 #5ac7ff;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.hidden {
-  display: none;
-}
-
-.welcome {
-    text-align: center;
-    max-width:700px;
-    width:90%;
-    padding:40px;
-    position:absolute;
-    top:50%;
-    left:50%;
-    -webkit-transform:translate(-50%, -50%);
-    transform:translate(-50%, -50%);
-    box-shadow:0px 2px 6px rgba(0,0,0,1);
-    border-radius:3px;
-    background:#fff;
-    border: 2px dashed  green;
-    /*box-shadow: 0 0 0 8px #ff0030;*/
-/*}*/
-
-.button {
-  background: transparent;
-  border: 2px solid darkgreen;
-  color: black;
-  display: inline;
-  padding: 10px;
-  }
-
-  .button:hover {
-    opacity: 1;
-    background: green;
-
-  }
-
-  a:link {
-    text-decoration: none;
-    border: 1px solid green;
-    padding: 10px;
-    background: transparent;
-    color: black;
-    display: inline;
-    padding: 10px;
-    font-weight: normal;
-    font-family: sans-serif;
-}*/
