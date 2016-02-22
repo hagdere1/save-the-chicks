@@ -20,7 +20,7 @@ EMERGE-HEN-CY! is a road-crossing arcade game inspired by Frogger and Pac-Man. T
 ### Features
 
   - Rendered with HTML5 Canvas.
-  - Collision-based physics for circle-on-circle and circle-on-rectangle interactions.
+  - Collision-detection physics for circle-on-circle and circle-on-rectangle interactions.
   - Random placement of eggs ensures that no two games are the same.
   - Progressively more difficult, with increasing vehicle speed and number of eggs per level.
   - Uncapped number of levels for an endless gaming experience.
