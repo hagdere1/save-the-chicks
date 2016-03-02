@@ -27,7 +27,6 @@
     </ul>
 
     <canvas id="canvas" width="1000" height="600"></canvas>
-
   </div>
 
     <!-- <audio id="soundEfx" src="pop.wav" style="display: none;"></audio> -->
@@ -50,8 +49,18 @@
         var ctx = canvas.getContext("2d");
         $("#canvas").hide();
         $("#StartButton").click(function () {
+
             $("#SplashScreen").hide();
             $("#canvas").show();
+
+            $('body').append('<audio id="music" src="audio/banjo_music.mp3" autoplay loop>')
+            var music = document.getElementById("music");
+            music.volume = 0.4;
+
+            $('body').append('<audio id="traffic" src="audio/traffic.mp3" autoplay loop>')
+            var traffic = document.getElementById("traffic");
+            traffic.volume = 0.4;
+
             var game = new ChickenRoad.Game(ctx, canvas.width, canvas.height).start();
         });
       })();
