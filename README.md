@@ -1,8 +1,5 @@
 # EMERGE-HEN-CY!
 
-* [Play Now!]
-  [Play Now!]: <http://haikgregoryagdere.com/save-the-chicks>
-
 ![alt text](images/start_screen.png "Start Screen")
 ![level5](images/level5.png "EMERGE-HEN-CY! Level 5")
 
